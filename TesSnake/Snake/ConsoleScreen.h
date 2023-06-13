@@ -13,6 +13,11 @@ public:
     void SetPixel(const int4& _Pos, char _Ch);
 
     void Clear();
+    
+    int4 ScreenScale()
+    {
+        return Scale;
+    }
 
     bool IsScreenOut(const int4& _Pos) const;
 

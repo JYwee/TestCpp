@@ -1,7 +1,8 @@
 #pragma once
+#include "ConsoleObject.h"
 
 // Ό³Έν :
-class Body
+class Body : public ConsoleObject
 {
 public:
 	// constrcuter destructer
@@ -14,9 +15,13 @@ public:
 	Body& operator=(const Body& _Other) = delete;
 	Body& operator=(Body&& _Other) noexcept = delete;
 
+	void Tick(float _Time);
+
+
 protected:
 
 private:
 
+	bool isActive = false;
 };
 

@@ -23,6 +23,19 @@ public:
 
 	static void EngineStart(const int4& Scale);
 
+	//Ãß°¡//
+	/*template<typename ObjectType>
+	static std::list<ConsoleObject*> FindObj(ObjectType)
+	{
+		std::list<ConsoleObject*> obj = ConsoleEngineCore::GetObjects();
+		std::list<ConsoleObject*>::iterator findIter = std::find(obj.begin(), obj.end(), *ObjectType);
+		
+		return findIter;
+	}*/
+
+	static void Destory();
+
+
 	template<typename ObjectType>
 	static ObjectType* CreateObject() 
 	{
@@ -32,6 +45,11 @@ public:
 	}
 
 	static ConsoleScreen Screen;
+
+	static std::list<ConsoleObject*> GetObjects()
+	{
+		return Objects;
+	}
 
 protected:
 

@@ -138,6 +138,7 @@
     <ClCompile Include="ConsoleMath.cpp" />
     <ClCompile Include="ConsoleObject.cpp" />
     <ClCompile Include="ConsoleScreen.cpp" />
+    <ClCompile Include="createManager.cpp" />
     <ClCompile Include="Head.cpp">
       <SubType>
       </SubType>
@@ -160,6 +161,7 @@
     <ClInclude Include="ConsoleMath.h" />
     <ClInclude Include="ConsoleObject.h" />
     <ClInclude Include="ConsoleScreen.h" />
+    <ClInclude Include="createManager.h" />
     <ClInclude Include="Head.h">
       <SubType>
       </SubType>

@@ -15,10 +15,26 @@ public:
 	Head& operator=(const Head& _Other) = delete;
 	Head& operator=(Head&& _Other) noexcept = delete;
 
+	int4 GetDirection() const
+	{
+		return mDirection;
+	}
+
+	void SetDirection(const int4& dir)
+	{
+		mDirection = dir;
+	}
+
+	bool IsPossibleMove() ;
+
 protected:
 	void Tick(float _Time);
 
+
+
 private:
+
+	int4 mDirection = { 0,0 };
 
 };
 
